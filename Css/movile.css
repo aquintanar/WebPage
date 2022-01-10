@@ -4,6 +4,7 @@
   --warm-red: #8c2711;
   --warm-orange: #d94929;
   --black: #0d0d0d;
+  --white: #e6e6e6;
 }
 
 * {
@@ -50,49 +51,196 @@ header nav .header--nav a {
 }*/
 
 header img {
-  width: 240px;
-  height: 220px;
+  width: 280px;
+  height: 260px;
   margin-top: 60px;
   align-self: center;
 }
 
-header .header--title-container h1 {
-  font-family: "Merienda", cursive;
-}
-
-main {
-  position: relative;
-  width: 100%;
-  height: 800px;
-  text-align: center;
-  background-color: var(--warm-red);
-}
-footer {
-  position: relative;
-  width: 100%;
-  height: 200px;
-
-  background-color: var(--warm-orange);
-}
 .header--title-container {
   width: 90%;
   min-width: 288px;
   max-width: 900px;
   height: 218px;
   margin-top: 10px;
+  margin-bottom: 80px;
   align-self: center;
   text-align: center;
 }
 .header--title-container h1 {
-  font-size: 2.4rem;
+  font-size: 3.1rem;
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--black);
+  font-family: "Merienda", cursive;
 }
 .header--title-container p {
   margin-top: 25px;
   font-size: 1.6rem;
-  font-weight: 500px;
-  line-height: 1.8rem;
+  font-weight: 500;
+  line-height: 2.1rem;
   color: var(--black);
+}
+main {
+  width: 100%;
+  height: auto;
+}
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: var(--white);
+}
+.AboutMe .AboutMe--title {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.AboutMe h2 {
+  margin-bottom: 30px;
+  font-size: 2.9rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  font-family: "Merienda", cursive;
+}
+.AboutMe--Personal {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin-top: 40px;
+  text-align: center;
+  align-self: center;
+}
+.AboutMe--Personal img {
+  width: 260px;
+  height: 260px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 150px;
+  border: solid;
+  box-shadow: 0 15px 15px rgba(89, 73, 30, 0.16);
+}
+.AboutMe--Personal p {
+  margin-top: 25px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+.AboutMe--Puas {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin-top: 40px;
+  text-align: center;
+  align-self: center;
+}
+.AboutMe .AboutMe--Puas img {
+  width: 260px;
+  height: 260px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  border-radius: 150px;
+  border: solid;
+  box-shadow: 0 15px 15px rgba(89, 73, 30, 0.16);
+}
+.AboutMe--Puas p {
+  margin-top: 25px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+.AboutMe--Debate {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin-top: 40px;
+  text-align: center;
+  align-self: center;
+}
+.AboutMe .AboutMe--Debate img {
+  width: 260px;
+  height: 260px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  border-radius: 150px;
+  border: solid;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.AboutMe--Debate p {
+  margin-top: 25px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+
+.Proyects {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: var(--grey);
+}
+.Proyects .Proyects--title {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.Proyects h2 {
+  margin-bottom: 30px;
+  font-size: 2.9rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  font-family: "Merienda", cursive;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: var(--warm-orange);
+  align-items: center;
+}
+footer section {
+  display: flex;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer .footer-rights {
+  margin-bottom: 2px;
+}
+footer .footer-rights p {
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+footer .footer-links .footer-links--github img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+footer .footer-links .footer-links--linkedin img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
